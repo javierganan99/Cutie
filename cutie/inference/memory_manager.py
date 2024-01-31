@@ -211,7 +211,7 @@ class MemoryManager:
                    objects: List[int],
                    selection: torch.Tensor = None,
                    *,
-                   as_permanent: bool = False) -> None:
+                   as_permanent: bool = 'no') -> None:
         # key: (1/2)*C*H*W
         # msk_value: (1/2)*num_objects*C*H*W
         # obj_value: (1/2)*num_objects*Q*C
